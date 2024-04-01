@@ -2,49 +2,65 @@
 <html lang="en">
 
 <head>
-<title>Shuttleworth Portfolio</title><!--This is for the web browser tab name-->
+<title>Shuttleworth Portfolio</title>
+<meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-       <h1 class="name">Shuttleworth</h1><!--Main title for webpage-->
-       <nav><!--Navigation bar-->
-        <a href="#">About Me</a>
-        <a href="#">Work</a>
-        <a href="#">Contact Me</a>
-        <a href="#">Resume</a>
-       </nav>
+        <div class="name">
+        <h1>Shuttleworth</h1>
+        <img src="Roillena25.jpg" alt="Skull planet purple Samantha Shuttleworth avatar" class="samS">
+        <nav>
+            <ul>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#workSection">Work</a></li>
+                <li><a href="#contactMe">Contact Me</a></li>
+            </ul>
+           </nav>
+        </div>
     </header>
 
-    <section></section><!--This is the section under the header-->
-
-    <section>
-        <h2 class="x">About Me</h2>
-        <p>My name is Samantha Shuttleworth and I am new to Full Stack Web Development.  My most recent job I was a Service Writer for a local mechanic shop. I learned a great deal about cars while working there and I formed close relationships with coworkers and customers. Before that position, I was a Document Specialist for GEICO. I worked thirteen hour shifts and was constantly on my feet running industrial printers or mail inserting machines. I enjoyed both positions, but I was looking to do something different.</p>
-        <p>I have always wanted to learn to code and design, so I felt it was time to finally pursue this field. So in December of 2023 I applied for the University of Texas Full Stack Bootcamp. I am excited to continue my education with this course and develop new skills for my future career in this field.</p>
+    <section id="aboutMe">
+        <h2 class="title">About Me</h2>
+        <p class="para">My name is Samantha Shuttleworth and I am new to Full Stack Web Development.  My most recent job I was a Service Writer for a local mechanic shop. I learned a great deal about cars while working there and I formed close relationships with coworkers and customers. Before that position, I was a Document Specialist for GEICO. I worked thirteen hour shifts and was constantly on my feet running industrial printers or mail inserting machines. I enjoyed both positions, but I was looking to do something different.</p>
+        <p class="para">I have always wanted to learn to code and design, so I felt it was time to finally pursue this field. So in December of 2023 I applied for the University of Texas Full Stack Bootcamp. I am excited to continue my education with this course and develop new skills for my future career in this field.</p>
     </section>
 
-    <section>
-        <h2 class="x">Work</h2>
-         <ul>
-            <li>Projects</li><!--Create links to Horiseon and Prework-->
-            <li>Technologies Used</li>
-            <li>Coming Soon</li>
+    <section id="workSection"> 
+        <h2 class="title">Work</h2>
+         <ul class="work">
+
+            <div class="binderDiv">
+                <a href="https://sashuttle.github.io/prework-study-guide/" target="_blank">
+                <img src="binder.jpg" alt="Pre-Work Study Guide" class="binder">
+                </a>
+                <h3>Pre-Work Study Guide</h3>
+            </div>
+
+            <div class="binderDiv">
+                <a href="https://sashuttle.github.io/Horiseon/" target="_blank">
+                <img src="binder.jpg" alt="Horiseon Coding Project" class="binder" >
+                </a>
+                <h3>Horiseon Project</h3>
+            </div>
+
         </ul>
     </section>
 
     <footer>
-        <h2 class="x">Contact Me</h2>
-            <section>
-                <ul>
-                    <li>555-555-555</li>
-                    <li>email@email.com</li>
-                    <li>Github</li>
+        <h2 class="title">Contact Me</h2>
+            <section id="contactMe">
+                <ul class="contact">
+                    <li class="contactInfo">Phone: 555-555-555</li>
+                    <li class="contactInfo">E-mail: email@email.com</li>
+                    <a href="https://github.com/Sashuttle" target="_blank">
+                    <li id=gitHub class="contactInfo">Github</li>
+                    </a>
                 </ul>
             </section>
     </footer>
 </body>
-
 
 </html>
